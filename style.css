@@ -68,6 +68,7 @@ text-align: center;
 }
 .btn {
     margin-bottom: 1em;
-    background-color:greenyellow;
+    background-color: #fec89a;
     padding: 0.5em;
+    margin-top: 0.5em;
 }
