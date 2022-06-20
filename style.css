@@ -1,0 +1,73 @@
+body {
+    background-color: #264653;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Header {
+    background-color: white;
+    border-radius: 0.5em;
+}
+.Small-Pizza{
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin: 1em;
+    align-content: center;
+}
+.Medium-Pizza{
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin: 1em;
+    align-content: center;
+}
+.Large-Pizza{
+    background-color: firebrick;
+    border: 3px solid black;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin: 1em;
+    align-content: center;
+}
+.Contact-details{
+    background-color: darkgoldenrod;
+    border: 3px solid black;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+@media(min-width:960px) {
+   
+.Container {
+    display:flex;
+    align-content: center;
+}
+.align {
+    align-content: center;
+}
+.cart {
+    align-content: center;
+    text-align: center;
+}
+
+}
+.cart {
+background-color: #457b9d;
+align-content: center;
+text-align: center;
+}
+.Message-display {
+    margin-bottom: 0.5em;
+    padding: 1em;
+}
+.btn {
+    margin-bottom: 1em;
+    background-color:greenyellow;
+    padding: 0.5em;
+}
