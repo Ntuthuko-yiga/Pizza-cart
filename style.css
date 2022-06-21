@@ -10,34 +10,13 @@ body {
     padding: 0.7em;
     text-align: center;
 }
-.Small-Pizza{
-    background-color: aqua;
-    border: 3px solid black;
-    padding: 1em;
-    border-radius: 1em;
-    margin-bottom: 1em;
-    margin: 1em;
-    align-content: center;
-}
-.Medium-Pizza{
-    background-color: cornflowerblue;
-    border: 3px solid black;
-    padding: 1em;
-    padding-left: 1em;
-    border-radius: 1em;
-    margin-bottom: 1em;
-    margin: 1em;
-    align-content: center;
-}
-.Large-Pizza{
+
+
+/* .Large-Pizza{
     background-color: firebrick;
     border: 3px solid black;
-    padding: 1em;
-    border-radius: 1em;
-    margin-bottom: 1em;
-    margin: 1em;
-    align-content: center;
-}
+
+} */
 
 .Contact-details{
     background-color: darkgoldenrod;
@@ -86,6 +65,35 @@ margin: 1em;
 padding: 1em;
 padding-top: 1em;
 }
-/* .align {
+.align {
     align-items: center;
-} */
+    padding: 1em; 
+    align-content: center;
+}
+.large {
+    background-color: firebrick;
+    border: 3px solid black; 
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin: 1em;
+    padding: 2em;
+    align-content: center;
+}
+.medium {
+    background-color: cornflowerblue;
+    border: 3px solid black; 
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin: 1em;
+    padding: 2em;
+    align-content: center;
+}
+.small{
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin: 1em;
+    align-content: center;
+}
