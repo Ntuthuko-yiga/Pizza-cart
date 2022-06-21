@@ -18,6 +18,9 @@
          mediumPizzaQty : 0, 
          largePizzaTotal : 0.00,
          largePizzaQty : 0,
+         payNow : false,
+         paymentAmount : 0,
+         paymentMessage : '',
         cartTotal() {
             return this.smallPizzaTotal + this.mediumPizzaTotal + this.largePizzaTotal
         },
@@ -53,6 +56,30 @@
             this.largePizzaQty -= 1
             }
         },
+        makePayment() {
+            <!-- alert('!') -->
+            if (this.paymentAmount) {
+                this.paymentMessage = 'Sorry- that is not enough money!'
+               
+                setTimeout (() => {
+                    this.payNow = false;
+                    this.clearCart()
+                }, 3000); 
+
+            }
+            if (this.paymentAmount >= this.cartTotal()) {
+                this.paymentMessage = 'Enjoy your pizza!'
+                this.clearCart();
+            }   
+        },
+        clearCart() {
+        this.smallPizzaTotal = 0.00;
+        this.smallPizzaQty = 0;
+         this.mediumPizzaTotal = 0.00;
+         this.mediumPizzaQty = 0;
+         this.largePizzaTotal = 0.00;
+         this.largePizzaQty = 0;
+        }
     }">
 
         <!-- <div> -->
@@ -130,18 +157,29 @@
 
                     <div class="Message-display">
 
-                        <div class="message">
-                            Message goes here..
+                       
+                    </div>
+
+                    <div x-show="payNow">
+                        <div class="Message-display">
+                            <div>
+                                <div class="message" x-text="paymentMessage">
+                                    
+                                </div>
+                                <label for="">Payment amount</label>
+                            <input class="input" type="number" placeholder="Payment amount" x-model="paymentAmount">
+                            <button x-on:click="makePayment" class="btn">PAY NOW</button>
+                            </div>
+                            
                         </div>
                     </div>
 
-                    <div class="Message-display">
-                        <label for="">Payment amount</label>
-                        <input class="input" type="number" placeholder="Payment amount">
-                    </div>
+                    
 
+                    <!-- <div x-text="paymentAmount">
+                    </div> -->
 
-                    <button class="btn">PAY NOW</button>
+                    <button x-show="!payNow" x-on:click="payNow=true" class="btn">PAY</button>
                 </div>
 
             </div>
