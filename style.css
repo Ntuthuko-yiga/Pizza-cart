@@ -1,12 +1,13 @@
 body {
-    background-color: #264653;
+    background-color: #84a59d;
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Header {
-    background-color: white;
+    background-color: #d4e09b;
     border-radius: 0.5em;
+    border: 5px ;
     padding: 0.7em;
     text-align: center;
 }
@@ -19,17 +20,23 @@ body {
 } */
 
 .Contact-details{
-    background-color: darkgoldenrod;
+    background-color: #f6bd60;
     border: 3px solid black;
-    padding: 1em;
+    padding: 1.5em;
+    margin: 1em;
     border-radius: 1em;
     margin-bottom: 1em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 @media(min-width:960px) {
    
 .Container {
-    display:flex;
+    display: flex;
+    justify-content: center;
     align-content: center;
+    padding: 1em;
+    margin: 1em;
+    /* background-color: #f28482 ; */
 }
 .align {
     align-content: center;
@@ -57,7 +64,7 @@ text-align: center;
     margin-bottom: 1em;
     background-color: #fec89a;
     padding: 0.7em;
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
 .message{
     background-color: #fb8b24;
@@ -65,45 +72,63 @@ margin: 1em;
 padding: 1em;
 padding-top: 1em;
 }
-.align {
+/* .align {
+    background-color: #fb8b24;
     align-items: center;
     padding: 1em; 
     align-content: center;
-}
+} */
 .large {
-    background-color: firebrick;
+    background-color: #cbdfbd;
     border: 3px solid black; 
     border-radius: 1em;
     margin-bottom: 1em;
     margin: 1em;
     padding: 2em;
     align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .medium {
-    background-color: cornflowerblue;
+    background-color: #f19c79;
     border: 3px solid black; 
     border-radius: 1em;
     margin-bottom: 1em;
     margin: 1em;
     padding: 2em;
     align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .small{
-    background-color: aqua;
+    background-color: #f5cac3;
     border: 3px solid black;
     padding: 2em;
     border-radius: 1em;
     margin-bottom: 1em;
     margin: 1em;
     align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* .cart-box {
 display: flex;
 justify-content: flex-end;
-margin: 0.5;
+margin: 5em;
 padding: 2em;
 padding-left: 2em;
+margin-bottom: 0.5em;
 } */
 /* .small-cart {
     display: inline-block;
 } */
+.f1 {
+    display: flex;
+    justify-content: flex-end;
+}
+/* .cart-name {
+    display: flex;
+} */
+.h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
